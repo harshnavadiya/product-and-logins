@@ -1,0 +1,46 @@
+<main class="container">
+ 
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column">
+      <img src="{{data.image}}" alt="">
+     
+    </div>
+   
+   
+    <!-- Right Column -->
+    <div class="right-column">
+   
+      <!-- Product Description -->
+      <div class="product-description">
+        <!-- <span>Headphones</span> -->
+        <h1>{{data.name}}</h1>
+        <p>{{data.description}}</p>
+      </div>
+   
+      <!-- Product Configuration -->
+      <div class="product-configuration">
+   
+        <!-- Product Color -->
+        
+   
+        <!-- Cable Configuration
+        <div class="cable-config">
+          <span>Cable configuration</span>
+   
+          <div class="cable-choose">
+            <button>Straight</button>
+            <button>Coiled</button>
+            <button>Long-coiled</button>
+          </div>
+   
+          <a href="#">How to configurate your headphones</a>
+        </div> -->
+      </div>
+   
+      <!-- Product Pricing -->
+      <div class="product-price">
+        <span>₹&emsp;{{data.price}}</span>
+        <button mat-raised-button color="primary" (click)="openBottomSheet()" class="cart-btn">Buy</button>
+      </div>
+    </div>
+  </main>

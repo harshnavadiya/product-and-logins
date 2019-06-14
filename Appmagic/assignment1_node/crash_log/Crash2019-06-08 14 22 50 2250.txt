@@ -1,0 +1,11 @@
+TypeError: res.json is not a function
+    at db.collection_find (D:\compony and personal\Appmagic\assignment1_node\controllers\product_list.js:33:25)
+    at D:\compony and personal\Appmagic\assignment1_node\helpers\db_helpers.js:63:16
+    at result (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:410:17)
+    at session.endSession (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:398:11)
+    at ClientSession.endSession (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb-core\lib\sessions.js:134:41)
+    at executeCallback (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:395:17)
+    at handleCallback (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:128:55)
+    at cursor.next (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\operations\collection_ops.js:598:5)
+    at result (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:410:17)
+    at executeCallback (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:402:9)

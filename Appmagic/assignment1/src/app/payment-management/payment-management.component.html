@@ -1,0 +1,20 @@
+<ngx-stripe-card [options]="cardOptions" [elementsOptions]="elementsOptions" (change)="cardUpdated($event)" (error)="error = $event"></ngx-stripe-card>
+<div class="error">
+  {{error?.message}}
+</div>
+<button mat-button (click)="getCardToken()" [disabled]="!complete">Get Card Token</button>
+
+<mat-nav-list >
+    <!-- <a  mat-list-item  (click)="openLink($event)">
+      <span mat-line>Paytm </span>
+      <span mat-line>Pay with paytm</span>
+    </a> -->
+  
+    <a mat-list-item style="height:120px;">
+      <div align="center">
+        <div id="paypal-checkout-btn"></div>
+      </div>
+    </a>
+    
+    
+  </mat-nav-list>

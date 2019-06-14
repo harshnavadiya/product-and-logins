@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Product List</span>
+    <span class="example-spacer"></span>
+    <button
+    mat-button
+        *ngIf="!auth.isAuthenticated()"
+        (click)="auth.login()">
+          Log In
+      </button>
+
+      <div>
+        <div *ngIf="auth.isAuthenticated() && profile" mat-card-avatar class="example-header-image"><img style="width:40px;height:40px;margin-top:6px;border-radius: 50%" src="{{profile.picture}}" /></div>
+      </div>
+        <mat-icon *ngIf="auth.isAuthenticated()"
+        (click)="auth.logout()" class="example-icon" style="cursor:pointer" aria-hidden="false" aria-label="Example user verified icon">settings_power</mat-icon>
+     
+
+     
+    <!-- <button mat-button >Login</button> -->
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

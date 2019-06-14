@@ -1,0 +1,11 @@
+TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\compony and personal\Appmagic\assignment1_node\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (D:\compony and personal\Appmagic\assignment1_node\node_modules\express\lib\response.js:260:14)
+    at db.collection_find (D:\compony and personal\Appmagic\assignment1_node\controllers\product_list.js:24:25)
+    at D:\compony and personal\Appmagic\assignment1_node\helpers\db_helpers.js:63:16
+    at handleCallback (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:128:55)
+    at Collection.<anonymous> (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\collection.js:431:45)
+    at Collection.deprecated [as find] (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:660:17)
+    at Object.collection_find (D:\compony and personal\Appmagic\assignment1_node\helpers\db_helpers.js:57:30)
+    at app.post (D:\compony and personal\Appmagic\assignment1_node\controllers\product_list.js:18:12)

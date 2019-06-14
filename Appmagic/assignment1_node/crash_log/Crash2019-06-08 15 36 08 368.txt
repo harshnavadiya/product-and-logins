@@ -1,0 +1,11 @@
+MongoError: MongoClient must be connected before calling MongoClient.prototype.db
+    at MongoClient.db (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\mongo_client.js:233:11)
+    at client.connect.err (D:\compony and personal\Appmagic\assignment1_node\helpers\db_helpers.js:30:31)
+    at err (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:411:14)
+    at executeCallback (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\utils.js:401:25)
+    at err (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\operations\mongo_client_ops.js:285:21)
+    at connectCallback (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\operations\mongo_client_ops.js:265:5)
+    at topology.connect (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\operations\mongo_client_ops.js:413:14)
+    at ReplSet.<anonymous> (D:\compony and personal\Appmagic\assignment1_node\node_modules\mongodb\lib\topologies\replset.js:364:11)
+    at Object.onceWrapper (events.js:286:20)
+    at ReplSet.emit (events.js:198:13)

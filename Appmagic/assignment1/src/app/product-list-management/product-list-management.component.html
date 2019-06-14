@@ -1,0 +1,21 @@
+<section class="content">
+
+
+          <div *ngFor="let item of product" class="card" (click)="openDialog(item)">
+            <div class="imgouter">
+              <img src="{{item.image}}" class="img" name="img">
+            </div>
+            <div>
+           
+              <div class="namewrap"><B>{{item.name}}</B></div>
+            
+              <div class="price"><b>₹{{item.price}}</b></div>
+             
+            </div>
+          </div>
+     
+</section>
+
+<script>
+
+</script>
